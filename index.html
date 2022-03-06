@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Soma de Dois Números</h1><br>
+            <p>Insira o primeiro números
+            <input id="n1" type="number" style="font-size: 18px;"><br/>
+            <br>
+            Insira o segundo número 
+            <input id="n2" type="number" style="font-size: 18px;"/><br/>
+        <br>
+        <br>
+        <div class="btn">
+        <button onclick="somar()" style="font-size: 18px; border-radius: 10px; padding: 8px; background-image: linear-gradient(to top, #555997, #2a2e77, #252aa4, #3c3c77);; color:aliceblue; font-weight: bold"> Somar</button></p><br/>
+        <br>
+        </div>
+            <div class="res" style="font-size: 22px;border-radius: 8px; font-weight: bold;">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+        var n1 = document.querySelector('#n1')  
+        var n2 = document.querySelector('#n2')
+        var resultado = document.querySelector('span')
+
+        function somar(){
+            resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+        }
+</script>
+
+</body>
+</html>
