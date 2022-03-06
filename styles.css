@@ -29,7 +29,7 @@ body{
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(to right top, #6b6e8c, #555997, #3e439f, #252aa4, #0000a6);
-    height: 370px;
+    height: 390px;
     color: white;
     position: absolute;
     top: 50%;
